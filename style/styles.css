@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    font-family: "Kiwi Maru", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #3f3c3c;
+    color: whitesmoke;
+    overflow-y: hidden;
+}
+
+button {
+    font-family: "Kiwi Maru", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: xx-large;
+    border: 0px solid transparent;
+    border-radius: 50%;
+    background-color: #767272;
+    color: whitesmoke;
+    height: 41pt;
+    width: 41pt;
+}
+
+.button::after {
+    filter: opacity(75%);
+}
+
+.operator {
+    background-color: #E3B9B9;
+    color: black;
+}
+
+.firstRow {
+    background-color: #D9D9D9;
+    color: black;
+}
+
+#app {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#root {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+#calculatorRoot {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 5pt;
+}
+
+#mainBody {
+    display: flex;
+    flex-direction: column;
+    gap: 5pt;
+}
+
+#numberGrid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    direction: rtl;
+    gap: 5pt;
+}
+
+#operatorColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 5pt;
+}
+
+#additionalFunctionRow {
+    display: flex;
+    flex-direction: row;
+    gap: 5pt;
+}
+
+#resultText {
+    font-size: 38pt;
+    font-family: "Kiwi Maru", serif;
+    font-weight: 400;
+    margin: 0pt;
+    width: 100%;
+    text-align: end;
+}
+
+#title {
+    font-size: 14pt;
+}
